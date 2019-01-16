@@ -15,7 +15,7 @@ class App extends Component {
 
   decreaseCount = () => {
     const { count } = this.state;
-    if (this.state.count !== 0) {
+    if (count > 0) {
       this.setState({ count: count - 1 });
     }
   }
