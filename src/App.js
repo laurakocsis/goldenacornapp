@@ -9,24 +9,27 @@ class App extends Component {
   }
 
   incrementCount = () => {
-    this.setState({ count: this.state.count + 1 });
+    const { count } = this.state;
+    this.setState({ count: count + 1 });
   }
 
   decreaseCount = () => {
+    const { count } = this.state;
     if (this.state.count !== 0) {
-      this.setState({ count: this.state.count - 1 });
+      this.setState({ count: count - 1 });
     }
   }
 
   render() {
+    const { count } = this.state;
     return (
-      <React.Fragment>
+      <div>
         <Button clicked={this.incrementCount} value='Buy one' />
         <Display>
-          <h2>{this.state.count} 🌰</h2>
+          <h2>{count} 🌰</h2>
         </Display>
         <Button clicked={this.decreaseCount} value='Eat one' />
-      </React.Fragment>
+      </div>
     )
   }
 
