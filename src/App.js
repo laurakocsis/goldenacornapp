@@ -5,15 +5,7 @@ import Display from './Display';
 
 class App extends Component {
   state = {
-    count: 0,
-    buttons: [
-      {
-        text: 'Buy one'
-      },
-      {
-        text: 'Eat one'
-      }
-    ]
+    count: 0
   }
 
   incrementCount = () => {
@@ -29,11 +21,11 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Button clicked={this.incrementCount} value={this.state.buttons[0].text} />
+        <Button clicked={this.incrementCount} value='Buy one' />
         <Display>
           <h2>{this.state.count} 🌰</h2>
         </Display>
-        <Button clicked={this.decreaseCount} value={this.state.buttons[1].text} />
+        <Button clicked={this.decreaseCount} value='Eat one' />
       </React.Fragment>
     )
   }
