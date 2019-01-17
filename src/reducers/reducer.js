@@ -5,7 +5,7 @@ const acorns = (state = { counter: 0 }, action) => {
     case 'BUY_ACORN':
       return { ...state, counter: state.counter + action.payload }
     case 'EAT_ACORN':
-      if (counter > 0) {
+      if (state.counter > 0) {
         return { ...state, counter: state.counter - action.payload }
       } else {
         return state
