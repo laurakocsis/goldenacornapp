@@ -8,7 +8,7 @@ const mapStateToProps = () => {
   };
 };
 
-const mapDispatchToProps = () => {
+const mapDispatchToProps = (dispatch) => {
   return {
     clicked: () => {
       dispatch(eatAcorn(1));

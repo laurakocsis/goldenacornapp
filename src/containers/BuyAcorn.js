@@ -8,9 +8,9 @@ const mapStateToProps = () => {
   };
 };
 
-const mapDispatchToProps = () => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    onClick: () => {
+    clicked: () => {
       dispatch(buyAcorn(1));
     },
   };
