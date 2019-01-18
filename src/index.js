@@ -20,6 +20,6 @@ ReactDOM.render(
         <Route path='/states' component={StatesApp} />
       </App>
     </Provider>
- </Router>,
+  </Router>,
   document.getElementById('root')
 );
