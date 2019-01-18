@@ -1,7 +1,11 @@
 import React from 'react';
-// import ReduxApp from './components/ReduxApp';
-// import Navbar from './components/navbar'
+import Navbar from './components/navbar';
 
-const App = ({ children }) => children;
+const App = ({ children }) => (
+  <div>
+    <Navbar />
+    {children}
+  </div>
+)
 
 export default App;
