@@ -1,14 +1,7 @@
 import React from 'react';
-import BuyAcorn from './containers/BuyAcorn';
-import EatAcorn from './containers/EatAcorn';
-import DisplayAcorn from './containers/DisplayAcorn';
+// import ReduxApp from './components/ReduxApp';
+// import Navbar from './components/navbar'
 
-const App = () => (
-  <main>
-    <BuyAcorn />
-    <DisplayAcorn />
-    <EatAcorn />
-  </main>
-);
+const App = ({ children }) => children;
 
 export default App;
