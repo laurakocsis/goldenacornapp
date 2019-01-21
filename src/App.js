@@ -1,14 +1,11 @@
 import React from 'react';
-import BuyAcorn from './containers/BuyAcorn';
-import EatAcorn from './containers/EatAcorn';
-import DisplayAcorn from './containers/DisplayAcorn';
+import Navbar from './components/navbar';
 
-const App = () => (
-  <main>
-    <BuyAcorn />
-    <DisplayAcorn />
-    <EatAcorn />
-  </main>
-);
+const App = ({ children }) => (
+  <div>
+    <Navbar />
+    {children}
+  </div>
+)
 
 export default App;
